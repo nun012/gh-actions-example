@@ -61,7 +61,7 @@ jobs:
   # ℹ️ Should run only for the 'main' branch
   deploy:
     runs-on: ubuntu-latest
-    needs: [test]
+    needs: cve-scan
     if: github.ref == 'refs/heads/main'
     steps:
       - name: Deploy
