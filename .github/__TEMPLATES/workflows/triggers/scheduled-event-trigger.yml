@@ -1,13 +1,8 @@
-## This workflow runs periodically.
-##
-## More details on https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows#schedule
-
 name: Scheduled Workflow
 
 on:
   schedule:
-    - cron: '30 5 * * 1,3' # 5:30 AM on Monday and Wednesday
-    - cron: '30 5 * * 2,4' # 5:30 AM on Tuesday and Thursday
+    - cron: '* * * * *' # Runs every minute
 
 jobs:
   test_schedule:
