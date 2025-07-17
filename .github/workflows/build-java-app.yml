@@ -12,6 +12,7 @@ on:
       - java-app/**
   pull_request:
     branches: [ "main" ]
+    #test
 
 jobs:
   build:
