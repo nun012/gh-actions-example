@@ -5,7 +5,10 @@
 name: Manual Run
 
 on:
-  # Allows you to run this workflow manually from the Actions tab
+  push:
+    branches:
+      - main
+# Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
     inputs:
       name:
