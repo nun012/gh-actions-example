@@ -30,6 +30,7 @@ jobs:
   # ℹ️ Should run only for: main, feature/* and bugfix/*
   test:
     runs-on: ubuntu-latest
+    needs: build
     steps:
       - name: Run Tests
         run: echo "✅ Testing on ${{ github.ref }}"
